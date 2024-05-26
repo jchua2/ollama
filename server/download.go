@@ -59,9 +59,9 @@ type blobDownloadPart struct {
 }
 
 const (
-	numDownloadParts          = 64
-	minDownloadPartSize int64 = 100 * format.MegaByte
-	maxDownloadPartSize int64 = 1000 * format.MegaByte
+	numDownloadParts          = 1
+	minDownloadPartSize int64 = 10000 * format.MegaByte
+	maxDownloadPartSize int64 = 20000 * format.MegaByte
 )
 
 func (p *blobDownloadPart) Name() string {
